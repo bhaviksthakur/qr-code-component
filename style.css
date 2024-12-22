@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* color variables  */
+
+:root {
+    --clr--dark-blue: hsl(218, 44%, 22%);
+    --clr--light-blue: hsl(212, 45%, 89%);
+    --clr--slate-gray: hsl(216, 15%, 48%);
+    --clr--slate-white: hsl(0, 0%, 100%);
+}
+
+/* default styling  */
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    background-color: var(--clr--light-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh
+}
+
+/* typography  */
+
+h1,
+p {
+    text-align: center;
+
+}
+
+.qr-title {
+    font-size: 1.5rem;
+    color: var(--clr--dark-blue)
+}
+
+.qr-body {
+    font-size: 1rem;
+    color: var(--clr--slate-gray)
+}
+
+
+.footer-section {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 1.5em
+}
+
+
+.footer-link {
+    color: var(--clr--dark-blue)
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--clr--slate-gray)
+}
+
+/* layout */
+
+.qr-container {
+    border-radius: 1em;
+    width: 80%;
+    max-width: 300px;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--clr--slate-white);
+    padding: 1em 1em;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.qr-img {
+    max-width: 100%;
+    border-radius: 0.9em;
+
+}
+
+.qr-body {
+    padding-bottom: 1.5em
+}
+
+.qr-img:hover,
+.qr-img:focus {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
